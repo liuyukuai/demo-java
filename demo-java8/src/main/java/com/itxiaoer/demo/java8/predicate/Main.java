@@ -4,6 +4,7 @@ import com.itxiaoer.demo.java8.beans.Apple;
 import com.itxiaoer.demo.java8.beans.AppleContainer;
 
 import java.util.Objects;
+import java.util.Stack;
 import java.util.function.Predicate;
 
 /**
@@ -17,5 +18,7 @@ public class Main {
         AppleContainer.filter(red);
         AppleContainer.filter(red.negate());
         AppleContainer.filter(red.and(weight));
+
+        Stack stack = new Stack();
     }
 }

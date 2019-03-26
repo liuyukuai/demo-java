@@ -1,6 +1,5 @@
 package com.itxiaoer.demo.jvm;
 
-import java.lang.ref.WeakReference;
 
 /**
  * @author : liuyk

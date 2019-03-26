@@ -17,7 +17,10 @@
         <module>demo-java8</module>
         <module>demo-jvm</module>
         <module>demo-leetcode</module>
+        <module>demo-concurrency</module>
+        <module>demo-patterns</module>
     </modules>
+
     <packaging>pom</packaging>
     <dependencies>
         <dependency>
