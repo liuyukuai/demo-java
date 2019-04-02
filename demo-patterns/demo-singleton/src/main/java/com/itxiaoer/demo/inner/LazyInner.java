@@ -35,4 +35,14 @@ public class LazyInner {
     public static LazyInner getInstance() {
         return Inner.instance;
     }
+
+    /**
+     * 解决序列化创建多对象的问题
+     *
+     * @return instance
+     */
+    @SuppressWarnings("unused")
+    public LazyInner readResolve() {
+        return Inner.instance;
+    }
 }

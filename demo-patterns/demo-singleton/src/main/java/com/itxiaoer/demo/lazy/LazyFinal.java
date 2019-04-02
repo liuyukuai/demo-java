@@ -1,12 +1,14 @@
 package com.itxiaoer.demo.lazy;
 
+import java.io.Serializable;
+
 /**
  * 懒汉单例模式
  *
  * @author : liuyk
  */
 @SuppressWarnings("WeakerAccess")
-public class LazyFinal {
+public class LazyFinal implements Serializable {
 
     private static volatile LazyFinal instance = null;
 
@@ -41,6 +43,16 @@ public class LazyFinal {
                 }
             }
         }
+        return instance;
+    }
+
+    /**
+     * 解决序列化创建多对象的问题
+     *
+     * @return instance
+     */
+    @SuppressWarnings("unused")
+    public LazyFinal readResolve() {
         return instance;
     }
 }

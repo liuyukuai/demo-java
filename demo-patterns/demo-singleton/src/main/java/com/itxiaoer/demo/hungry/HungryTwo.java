@@ -31,4 +31,14 @@ public class HungryTwo {
     public static HungryTwo getInstance() {
         return INSTANCE;
     }
+
+    /**
+     * 解决序列化创建多对象的问题
+     *
+     * @return instance
+     */
+    @SuppressWarnings("unused")
+    public HungryTwo readResolve() {
+        return INSTANCE;
+    }
 }
