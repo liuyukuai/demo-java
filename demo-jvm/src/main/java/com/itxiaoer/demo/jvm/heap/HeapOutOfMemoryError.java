@@ -17,6 +17,8 @@ public class HeapOutOfMemoryError {
         for (; ; ) {
             CONTAINER.add("hello" + new Random().nextInt(1000000));
         }
+
+
     }
     // -Xmx10m -Xms10m -XX:+PrintGCDetails -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=oom.dump
 }
