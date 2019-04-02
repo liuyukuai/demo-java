@@ -7,7 +7,7 @@ package com.itxiaoer.demo.lazy;
  */
 @SuppressWarnings("WeakerAccess")
 public class LazyOne {
-    private static LazyOne instance = null;
+    private static volatile LazyOne instance = null;
 
     /**
      * 该构造器不安全
