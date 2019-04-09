@@ -3,7 +3,7 @@ package com.itxiaoer.demo.proxy;
 import java.util.concurrent.TimeUnit;
 
 /**
- * car
+ * @author : liuyk
  */
 public class Car implements Movable {
 
