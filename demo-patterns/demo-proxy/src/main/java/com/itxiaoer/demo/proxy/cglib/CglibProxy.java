@@ -12,16 +12,11 @@ import java.lang.reflect.Method;
  * @author : liuyk
  */
 public class CglibProxy implements MethodInterceptor {
-    private Object target;
-
-    public CglibProxy(Object target) {
-        this.target = target;
-    }
 
     @Override
     public Object intercept(Object o, Method method, Object[] objects, MethodProxy methodProxy) throws Throwable {
         System.out.println("do something start. ");
-        Object invoke = methodProxy.invokeSuper(target, objects);
+        Object invoke = methodProxy.invokeSuper(o, objects);
         System.out.println("do something end. ");
         return invoke;
     }
