@@ -9,12 +9,13 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>demo-patterns</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>demo-proxy</module>
-        <module>demo-factory</module>
-        <module>demo-singleton</module>
-        <module>demo-observer</module>
-    </modules>
+    <artifactId>demo-netty</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.itxiaoer.commons</groupId>
+            <artifactId>commons-core</artifactId>
+            <version>2.2.1</version>
+        </dependency>
+    </dependencies>
 </project>

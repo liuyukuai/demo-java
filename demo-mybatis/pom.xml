@@ -9,12 +9,10 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>demo-patterns</artifactId>
+    <artifactId>demo-mybatis</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>demo-proxy</module>
-        <module>demo-factory</module>
-        <module>demo-singleton</module>
-        <module>demo-observer</module>
+        <module>demo-simple</module>
     </modules>
+
 </project>

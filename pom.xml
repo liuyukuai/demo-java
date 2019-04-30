@@ -19,6 +19,9 @@
         <module>demo-leetcode</module>
         <module>demo-concurrency</module>
         <module>demo-patterns</module>
+        <module>demo-mybatis</module>
+        <module>demo-spring</module>
+        <module>demo-netty</module>
     </modules>
 
     <packaging>pom</packaging>
