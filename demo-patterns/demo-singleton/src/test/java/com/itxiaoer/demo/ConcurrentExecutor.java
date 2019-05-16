@@ -4,7 +4,6 @@ import lombok.AllArgsConstructor;
 
 import java.time.Instant;
 import java.util.concurrent.CountDownLatch;
-import java.util.concurrent.atomic.AtomicLong;
 import java.util.function.Supplier;
 
 /**
@@ -12,9 +11,7 @@ import java.util.function.Supplier;
  */
 public class ConcurrentExecutor {
 
-
     private static CountDownLatch countDownLatch = new CountDownLatch(1);
-    private static AtomicLong timer = new AtomicLong();
 
 
     public static void execute(int con, Supplier supplier) {
